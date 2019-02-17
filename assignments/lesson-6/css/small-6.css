@@ -53,7 +53,7 @@ li a:hover {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
 	.topnav li:not(:first-child) {display: none;}
     .topnav li.icon {
       float: right;
@@ -61,7 +61,7 @@ li a:hover {
     }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
