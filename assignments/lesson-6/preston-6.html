@@ -17,19 +17,20 @@
 			<h4>It's too cold to be pretty</h4>
 		</div>
 		<nav>
-			<ul>
+			<ul class="topnav" id="myTopnav">
 				<li><a href="#" class="active">Home</a></li>
 				<li><a href="#">Preston</a></li>
 				<li><a href="#">Soda Springs</a></li>
 				<li><a href="#">Fish Haven</a></li>
 				<li><a href="#">Storm Center</a></li>
 				<li><a href="#">Gallery</a></li>
+				<li class="icon"><a href="javascript:void(0)" onclick="myFunction()">&#9776;</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<h1>Preston</h1>
-		<img src="images/cit230_image_franklinOriginal-1.jpeg" alt="hero image">
+		<img src="images/cit230_image_franklinOriginal-1.jpeg" alt="hero image" id="hero-image">
 		<h3>Weather Summary</h3>
 		<p></p>
 		<article>
@@ -53,8 +54,10 @@
 		<!-- map -->
 		<!-- footer bar -->
 		<p>©2019 Weather Care ◊ Attributions ◊ moscosohd</p>
-		<p>Saturday, 9 February 2019</p>
+		<p id="date"></p>
 	</footer>
 	</div>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/hamburger.js"></script>
 </body>
 </html>
