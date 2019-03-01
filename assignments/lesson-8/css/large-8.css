@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Asul|Gidugu|Seymour+One');
+
+html {
+	font-family: 'Asul', sans-serif;
+}
 header {
-	/*display: flex;*/
-	justify-content: center;
-	background-color: #3893da;
+	font-family: 'Gidugu', sans-serif;
+}
+#header {
+	width: 300px;
+	margin: 0 auto;
 }
 nav{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,1.9);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,1.9);
+    font-family: 'Seymour One', sans-serif;
 }
 
 nav button {
@@ -29,6 +37,7 @@ nav ul .hide {
 #footer {
 	background-color: #2d6b52;
 	padding: 20px;
+	font-family: 'Seymour One', sans-serif;
 }
 
 #map {
@@ -39,6 +48,7 @@ nav ul .hide {
 #logo {
 	height: 90px;
 	float: left;
+	padding: 10px;
 }
 
 .site-name {
@@ -75,10 +85,13 @@ li a:hover {
 	background-color: #2d6b52;
 }
 
-#hero-img, .hero {
+.hero-img, .hero {
 	margin: auto;
 	width: 75vw;
 	font-size: 1.25vw;
+}
+.article-img {
+	width: 25vw;
 }
 
 /*.topnav .icon {
@@ -120,6 +133,7 @@ li a:hover {
 
 .tc {
 	text-align: center;
+    font-family: 'Seymour One', sans-serif;
 }
 
 table {
@@ -145,6 +159,7 @@ thead {
 	text-align: center;
 	color: white;
 	background-color: #0448c5;
+	font-family: 'Gidugu', sans-serif;
 }
 
 #gallery {
@@ -168,6 +183,7 @@ thead {
 
 .card-text {
 	padding: 2px 16px;
+	font-family: 'Asul', sans-serif;
 }
 
 form, p.form {

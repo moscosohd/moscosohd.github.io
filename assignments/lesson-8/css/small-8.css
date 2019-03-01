@@ -156,3 +156,11 @@ ul.topnav li.right {float: right;}
 	display: grid;
 	grid-template-columns: repeat(1, 100%);
 }
+@media screen and (max-width: 600px) {
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0) !important;
+	}
+  .card:hover {
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0) !important;
+  }
+}
