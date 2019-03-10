@@ -1,4 +1,4 @@
-const requestURL = "file:///Users/kiosk/Desktop/Dad%20dont%20move%20even%20if%20he%20said%20so/230%20(Github)/moscosohd.github.io/assignments/lesson-9/scripts/cities.json";
+const requestURL = "http://moscosohd.github.io/assignments/lesson-9/scripts/cities.json";
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
