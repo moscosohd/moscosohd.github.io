@@ -193,3 +193,7 @@ table {
 table, th, td {
   border: 1px solid black;
 }
+
+#city1, #city2, #city3 {
+  text-align: center;
+}
