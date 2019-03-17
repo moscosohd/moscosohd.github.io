@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Storm Center « Weather Care</title>
+	<meta name="author" content= "moscosohd  |  CIT 230">
+	<meta name= "description" content= "Weather information">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize10.css">
+	<link rel="stylesheet" type="text/css" href="css/small-10.css">
+	<link rel="stylesheet" type="text/css" href="css/large-10.css">
+</head>
+<body>
+	<div id="content">
+	<header>
+		<div id="header">
+			<a href="index.html"><img src="images/cloud-logo.jpg" alt="logo" id="logo"></a>
+			<h1 class="site-name">Weather Care</h1>
+			<div class="motto">
+				<h2>Weather it's right or not</h2>
+			</div>
+		</div>
+		<nav>
+			<ul class="topnav" id="myTopnav">
+				<!-- <li><button class="icon" onclick="myFunction()">&#9776;</button></li> -->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="preston-9.html">Preston</a></li>
+				<li><a href="Soda Springs">Soda Springs</a></li>
+				<li><a href="Fish Haven">Fish Haven</a></li>
+				<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery-9.html">Gallery</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+	    	</ul>
+		</nav>
+	</header>
+	
+	<main>
+        <h1 class="tc">Form</h1>
+        <form action="thanks.html">
+            <label for="fullname">Full name:</label>
+            <input class="woh" type="text" name="fullname" id="fullname" pattern="[A-Z].{4,}" title="Only alpha characters and a minimum of 5" required />
+			<br>
+			<label for="email">E-mail:</label>
+			<input class="woh" type="email" name="email" id="email" placeholder="johndoe@myemail.com" />
+			<br>
+            <label for="tel">Telephone number:</label>
+			<input class="woh" type="tel" name="tel" id="tel" required />
+			<br>
+            <label for="zip">Zip code:</label>
+			<input class="woh" type="number" name="zip" id="zip" required />
+			<br>
+            <label for="sd">Storm date:</label>
+			<input class="woh" type="date" name="sd" id="sd" />
+			<br>
+			<label for="st">Storm type:</label>
+			<input class="woh" list="stormtypes" name="st" id="st" />
+			<datalist id="stormtypes">
+				<option value="Flash Flood"></option>
+				<option value="Hail"></option>
+				<option value="Hurricane"></option>
+				<option value="Thunderstorm"></option>
+				<option value="Tornado"></option>
+			</datalist>
+			<br>
+			<label for="ss">Storm severity (1 - 10):</label>
+			<input type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="ss" id="ss" />
+			<span id="ratingvalue">5</span>
+			<br>
+			<label for="sr">Storm region:</label>
+			<select name="sr" id="sr">
+				<option disabled>Select Region ...</option>
+				<option value="preston">Preston</option>
+				<option value="sodaSprings">Soda Springs</option>
+				<option value="fishHaven">Fish Haven</option>
+			</select>
+			<br>
+			<label for="uidl">User in-danger level:</label>
+			<input type="radio" name="uidl" /> Yes
+			<input type="radio" name="uidl" /> Maybe
+			<input type="radio" name="uidl" /> No
+			<br>
+			<label for="textarea">Additional information or comments:</label>
+			<textarea name="textarea" rows="4" cols="62" id="textarea"></textarea>
+			<br>
+            <input type="submit" value="Submit" />
+        </form>
+	</main>
+	<footer>
+		<div id="footer">
+			<!-- map -->
+			<img id="map" src="images/Screen Shot 2019-02-22 at 7.40.37 PM.png">
+			<!-- Contact Information -->
+			<h4>Weather Care</h4>
+			<p>30 N 1st E</p>
+			<p>Preston, ID 83263</p>
+			<p>(555) 555-5555</p>
+			<p>weathercare@wc.com</p>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-pinterest"></a>
+			<a href="#" class="fa fa-google"></a>
+		</div>
+		<!-- footer bar -->
+		<div id="bottom-b">
+			<p>©2019 Weather Care ◊ Attributions ◊ moscosohd | <span id="date"></span></p>
+		</div>
+	</footer>
+	</div>
+	<script src="scripts/currentdate.js"></script>
+	<script src="scripts/rating.js"></script>
+	<script src="scripts/hamburger.js"></script>
+</body>
+</html>
