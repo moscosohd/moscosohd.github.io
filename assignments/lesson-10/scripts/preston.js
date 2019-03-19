@@ -19,3 +19,41 @@ weatherRequest.onload = function() {
     direction.innerHTML = weatherData.wind.speed;
     windspeed.innerHTML = weatherData.wind.deg;
 }
+
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";
+let weatherForecast = new XMLHttpRequest();
+weatherForecast.open('GET', forecastURL, true);
+weatherForecast.send();
+
+weatherForecast.onload = function() {
+    var weatherForecastData = JSON.parse(weatherForecast.responseText);
+    var day1 = document.getElementById("dayone");
+    var day2 = document.getElementById("daytwo");
+    var day3 = document.getElementById("daythree");
+    var day4 = document.getElementById("dayfour");
+    var day5 = document.getElementById("dayfive");
+    
+    var weather = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sun";
+    weekday[1] = "Mon";
+    weekday[2] = "Tues";
+    weekday[3] = "Wed";
+    weekday[4] = "Thurs";
+    weekday[5] = "Fri";
+    weekday[6] = "Saturday";
+
+    day1.innerHTML = weekday[date.getDay()];
+    day2.innerHTML = weekday[date.getDay() + 1];
+    day3.innerHTML = weekday[date.getDay() + 2];
+    day4.innerHTML = weekday[date.getDay() + 3];
+    day5.innerHTML = weekday[date.getDay() + 4];
+    
+    var day1weather = document.getElementById("dayoneweather");
+    var day2weather = document.getElementById("daytwoweather");
+    var day3weather = document.getElementById("daythreeweather");
+    var day4weather = document.getElementById("dayfourweather");
+    var day5weather = document.getElementById("dayfiveweather");
+
+    day1weather.innerHTML = `https://openweathermap.org/img/w/${weatherForecastData.list["0"].weather.icon}.png`;
+}
