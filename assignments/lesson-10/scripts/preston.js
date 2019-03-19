@@ -10,6 +10,8 @@ weatherRequest.onload = function() {
     var humidity = document.getElementById("Humidity");
     var direction = document.getElementById("direction");
     var windspeed = document.getElementById("windSpeed");
+    var calculation = Math.round(35.74 + 0.6215 * weatherData.main.temp - 35.75 * Math.pow(weatherData.wind.speed, 0.16) + 0.4275 * weatherData.main.temp * Math.pow(weatherData.wind.speed, 0.16));
+    document.getElementById("windchill").innerHTML = calculation;
     
     currentTemp.innerHTML = weatherData.main.temp;
     high.innerHTML = weatherData.main.temp_max;
@@ -17,14 +19,3 @@ weatherRequest.onload = function() {
     direction.innerHTML = weatherData.wind.speed;
     windspeed.innerHTML = weatherData.wind.deg;
 }
-/*
-let weatherForecast = new XMLHttpRequest();
-weatherForecast.open('GET', requestURL, true);
-weatherForecast.send();
-
-weatherForecast.onload = function() {
-    var weatherData = JSON.parse(weatherForecast.responseText);
-    var currenttempDiv = document.getElementById("current-Temp");
-    currenttempDiv.innerHTML = weatherData.main.temp;
-}
-*/
