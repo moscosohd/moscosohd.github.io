@@ -131,6 +131,10 @@ thead {
   background-color: #0448c5;
 }
 
+.forecastImg {
+  filter: saturate(4);
+}
+
 .fa {
   text-decoration: none;
   border-radius: 25%;

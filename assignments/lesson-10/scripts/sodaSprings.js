@@ -1,4 +1,4 @@
-const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";
+const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', requestURL, true);
 weatherRequest.send();
@@ -22,7 +22,7 @@ weatherRequest.onload = function() {
     windspeed.innerHTML = weatherData.wind.deg;
 }
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";
 let weatherForecast = new XMLHttpRequest();
 weatherForecast.open('GET', forecastURL, true);
 weatherForecast.send();
