@@ -33,7 +33,7 @@ weatherForecast.onload = function() {
     var day4 = document.getElementById("dayfour");
     var day5 = document.getElementById("dayfive");
     
-    var weather = new Date();
+    var date = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sun";
     weekday[1] = "Mon";
@@ -41,7 +41,11 @@ weatherForecast.onload = function() {
     weekday[3] = "Wed";
     weekday[4] = "Thurs";
     weekday[5] = "Fri";
-    weekday[6] = "Saturday";
+    weekday[6] = "Sat";
+    weekday[7] = weekday[0];
+    weekday[8] = weekday[1];
+    weekday[9] = weekday[2];
+    weekday[10] = weekday[3];
 
     day1.innerHTML = weekday[date.getDay()];
     day2.innerHTML = weekday[date.getDay() + 1];
@@ -54,6 +58,4 @@ weatherForecast.onload = function() {
     var day3weather = document.getElementById("daythreeweather");
     var day4weather = document.getElementById("dayfourweather");
     var day5weather = document.getElementById("dayfiveweather");
-
-    day1weather.innerHTML = `https://openweathermap.org/img/w/${weatherForecastData.list["0"].weather.icon}.png`;
 }
