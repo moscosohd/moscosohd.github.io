@@ -58,4 +58,23 @@ weatherForecast.onload = function() {
     var day3weather = document.getElementById("daythreeweather");
     var day4weather = document.getElementById("dayfourweather");
     var day5weather = document.getElementById("dayfiveweather");
+
+    var weekdayWeather = new Array(7);
+    weekdayWeather[0] = weatherForecastData.list["0"].weather.icon;
+    weekdayWeather[1] = weatherForecastData["1"].weather.icon;
+    weekdayWeather[2] = weatherForecastData["2"].weather.icon;
+    weekdayWeather[3] = weatherForecastData["3"].weather.icon;
+    weekdayWeather[4] = weatherForecastData["4"].weather.icon;
+    weekdayWeather[5] = weatherForecastData["5"].weather.icon;
+    weekdayWeather[6] = weatherForecastData["6"].weather.icon;
+    weekdayWeather[7] = weekdayWeather[0];
+    weekdayWeather[8] = weekdayWeather[1];
+    weekdayWeather[9] = weekdayWeather[2];
+    weekdayWeather[10] = weekdayWeather[3];
+
+    day1weather.innerHTML = '<img src="https://openweathermap.org/img/w/' + weekdayWeather[date.getDay()] + '.png">';
+    day2weather.innerHTML = '<img src="https://openweathermap.org/img/w/' + weekdayWeather[date.getDay() + 1] + '.png">';
+    day3weather.innerHTML = '<img src="https://openweathermap.org/img/w/' + weekdayWeather[date.getDay() + 2] + '.png">';
+    day4weather.innerHTML = '<img src="https://openweathermap.org/img/w/' + weekdayWeather[date.getDay() + 3] + '.png">';
+    day5weather.innerHTML = '<img src="https://openweathermap.org/img/w/' + weekdayWeather[date.getDay() + 4] + '.png">';
 }
