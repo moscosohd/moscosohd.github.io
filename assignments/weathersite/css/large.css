@@ -5,6 +5,22 @@ html {
   background: linear-gradient(to right, lightgrey, white, white, white, lightgrey);
 }
 
+#loader {
+    display: block;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+}
+
+#content {
+  display: none;
+}
+
 header {
   font-family: 'Gidugu', sans-serif;
 }
