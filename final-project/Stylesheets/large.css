@@ -120,25 +120,31 @@ h1 {
     padding-top: 75px;
     height: 15vw;
 }
-/* Container holding hero image and the text */
-.hero-container-lp {
+/* Heroes */
+.hero-container-lp, .hero-container, .hero-container-sub {
     width: 100%;
-    height: 40vw;
-    min-height: 250px;
     position: relative;
     text-align: center;
     background-color: var(--light-blue);
     color: black;
 }
+/* Container holding hero image and the text */
+.hero-container-lp {
+    height: 40vw;
+    min-height: 250px;
+}
 /* Container holding hero image and the text on all pages except the landing page */
 .hero-container {
-    width: 100%;
     height: 30vw;
     min-height: 150px;
-    position: relative;
-    text-align: center;
-    background-color: var(--light-blue);
-    color: black;
+}
+.hero-container-sub {
+    height: 20vw;
+    min-height: 150px;
+}
+#subpage-h1 {
+    background-color: var(--yellow);
+    color: white;
 }
 /* Centered text */
 .centered {

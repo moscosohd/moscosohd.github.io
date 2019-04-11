@@ -1,4 +1,4 @@
-const scheduleURL = "file:///Users/newcomputer01/Desktop/final-project/Scripts/schedules.json"; // https://moscosohd.github.io/final-project/Scripts/schedules.json
+const scheduleURL = "https://moscosohd.github.io/final-project/Scripts/schedules.json";
 var xhr = new XMLHttpRequest();
 xhr.open("GET", scheduleURL);
 xhr.responseType = "json";
@@ -12,8 +12,13 @@ xhr.onload = function() {
     var locationM = document.getElementById("scheduleM");
 
     for (var temple in scheduleData) {
-        for (var i = 0; i > scheduleData[temple].length; i++) {
-            locationR.innerHTML += scheduleData[temple][i] + "<br />\n";
+        for (var i = 0; i < scheduleData[temple].length; i++) {
+            switch(temple) {
+                case "rexburg":locationR.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
+                case "boise":locationB.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
+                case "twin falls":locationTF.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
+                case "meridian":locationM.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
+            }
         }
     }
 }
