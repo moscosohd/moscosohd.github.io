@@ -1,0 +1,71 @@
+/* Navigation */
+nav ul {
+    padding: 0;
+}
+nav ul li:not(:first-child):not(:last-child), .dropdown .dropbtn {
+    display: none;
+}
+nav ul li a#icon {
+    float: right;
+    display: block;
+    height: 24px;
+}
+nav .topnav.responsive {
+    position: relative;
+}
+nav .topnav.responsive li a#icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+nav .topnav.responsive li {
+    float: none;
+    display: block !important;
+    text-align: left;
+}
+nav .topnav.responsive .dropdown {
+    float: none;
+}
+nav .topnav.responsive .dropdown-content {
+    position: relative;
+}
+nav .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.main.r-main {
+    margin-top: 260px;
+}
+/* Page Content */
+article {
+    width: 95%;
+}
+.col.fourth {
+    width: 44%;
+}
+.col {
+    padding: 10px 10px;
+}
+/* Cards */
+.card, .card-2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+}
+.card:hover, .card-2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
+}
+.card-container {
+    border: 2px solid lightgrey;
+    font-size: 2.5vw;
+}
+/* Titles */
+h2 {
+    font-size: 3.5vw;
+}
+.list-of {
+    width: 80%;
+}
+/* Buttons */
+.linkbtn {
+    font-size: 2.75vw;
+}

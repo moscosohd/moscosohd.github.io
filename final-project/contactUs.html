@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Resources/Images/logo_final.png" />
+        <title>Contact Us | Temple Inn &amp; Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Stylesheets/normalize.css" />
+        <link rel="stylesheet" href="Stylesheets/large.css" />
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="Stylesheets/medium.css" />
+        <link rel="stylesheet" media="screen and (max-width:600px)" href="Stylesheets/small.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav" id="topnav">
+                    <li><a href="index.html"><img id="small-logo" src="Resources/Images/logo_final.png" alt="Temple Inn and Suites logo" /> Temple Inn &amp; Suites</a></li>
+                    <li><a class="active" href="javascript:void(0)">Contact Us</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'services.html';">Services</button>
+                        <div class="dropdown-content">
+                            <a href="receptions.html">For Receptions</a>
+                            <a href="missionaries.html">For Missionaries</a>
+                        </div>
+                    </div>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="hero-container">
+                <div class="centered"><h1>Contact Us</h1></div>
+            </div>
+            <article>
+                <section id="first">
+                    <h2>Contact Info</h2>
+                    <p>
+                        Temple Inn &amp; Suites<br />
+                        4800 Montgomery Ln #300,<br />
+                        Bethesda, MD 20814<br />
+                        (403) 555-6127<br />
+                        customer_service@templehotels.com
+                    </p>
+                    <p>You can fill out the form at the bottom of the page to contact us.</p>
+                </section>
+                <section>
+                    <h2>Where We Are</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554606026185!5m2!1sen!2sus" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h2>Follow Us On Social Media</h2>
+                    <p>
+                        <a class="social" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a class="social" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a class="social" href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
+                        <a class="social" href="https://plus.google.com/"><i class="fab fa-google-plus-square"></i></a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Contact Us Now</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>First Name</label>
+                            <input type="text" name="firstName">
+                            <label>Last Name</label>
+                            <input type="text" name="lastName">
+                            <label>E-mail</label>
+                            <input type="email" name="email">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phoneNum">
+                            <label>Comments</label>
+                            <textarea rows="8" cols="25" name="other"></textarea>
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn &amp; Suites - All Rights Reserved</p>
+            <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a></p>
+        </footer>
+        <script src="Scripts/hamburger.js"></script>
+    </body>
+</html>

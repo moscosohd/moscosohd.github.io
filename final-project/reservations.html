@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Resources/Images/logo_final.png" />
+        <title>Reservations | Temple Inn &amp; Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Stylesheets/normalize.css" />
+        <link rel="stylesheet" href="Stylesheets/large.css" />
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="Stylesheets/medium.css" />
+        <link rel="stylesheet" media="screen and (max-width:600px)" href="Stylesheets/small.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav" id="topnav">
+                    <li><a href="index.html"><img id="small-logo" src="Resources/Images/logo_final.png" alt="Temple Inn and Suites logo" /> Temple Inn &amp; Suites</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'services.html';">Services</button>
+                        <div class="dropdown-content">
+                            <a href="receptions.html">For Receptions</a>
+                            <a href="missionaries.html">For Missionaries</a>
+                        </div>
+                    </div>
+                    <li><a class="active" href="javascript:void(0)">Reservations</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="hero-container">
+                <div class="centered"><h1>Reservations</h1></div>
+            </div>
+            <article>
+                <section id="first">
+                    <h2>Make a Reservation</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Details</legend>
+                            <label>Location</label>
+                            <input type="text" name="location">
+                            <label>Date</label>
+                            <input type="date" name="date">
+                            <label>Number of Rooms</label>
+                            <input type="number" min="1" max="10" name="numRooms">
+                            <label>Type of Rooms</label>
+                            <input type="text" name="typeRooms">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>First Name</label>
+                            <input type="text" name="firstName">
+                            <label>Last Name</label>
+                            <input type="text" name="lastName">
+                            <label>E-mail</label>
+                            <input type="email" name="email">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phoneNum">
+                            <label>Home State or Country</label>
+                            <input type="text" name="home">
+                            <label>Special Accomodations/Comments</label>
+                            <textarea rows="8" cols="25" name="other"></textarea>
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn &amp; Suites - All Rights Reserved</p>
+            <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a></p>
+        </footer>
+        <script src="Scripts/hamburger.js"></script>
+    </body>
+</html>

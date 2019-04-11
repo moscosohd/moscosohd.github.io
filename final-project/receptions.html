@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Resources/Images/logo_final.png" />
+        <title>Receptions | Services | Temple Inn &amp; Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Stylesheets/normalize.css" />
+        <link rel="stylesheet" href="Stylesheets/large.css" />
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="Stylesheets/medium.css" />
+        <link rel="stylesheet" media="screen and (max-width:600px)" href="Stylesheets/small.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav" id="topnav">
+                    <li><a href="index.html"><img id="small-logo" src="Resources/Images/logo_final.png" alt="Temple Inn and Suites logo" /> Temple Inn &amp; Suites</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <div class="active dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'services.html';">Services</button>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0)">For Receptions</a>
+                            <a href="missionaries.html">For Missionaries</a>
+                        </div>
+                    </div>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="hero-container">
+                <div class="centered"><h1>Services for Receptions<br /><span class="details"> is a hotel chain around Idaho near temple locations of the Church of Jesus Christ of Latter-day Saints, providing specialized services and accomodations that meet the needs of those patrons.</span></h1></div>
+            </div>
+            <article>
+                <section id="first">
+                    <h2>Locations</h2>
+                    <div class="row">
+                        <div class="col third">
+                            <div class="card">
+                                <img class="card-img" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-776440-wallpaper.jpg" alt=" Temple" />
+                                <div class="card-container">
+                                    <h4><b>Rexburg</b></h4>
+                                    <p>Text text text text text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col third">
+                            <div class="card">
+                                <img class="card-img" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x250/1-Boise-Idaho-Temple-1968984.jpg" alt=" Temple" />
+                                <div class="card-container">
+                                    <h4><b>Boise</b></h4>
+                                    <p>Text text text text text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col third">
+                            <div class="card">
+                                <img class="card-img" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/twin-falls-idaho/400x250/twin-falls-temple-850955-wallpaper.jpg" alt=" Temple" />
+                                <div class="card-container">
+                                    <h4><b>Twin Falls</b></h4>
+                                    <p>Text text text text text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="linkbtn" onclick="window.location.href = 'temples.html';">Learn More</button>
+                </section>
+                <section>
+                    <h2>Reservations</h2>
+                    <img id="hero-img" src="http://www.victoriastationhotel.co.uk/img/sliders/1_11218_287.jpg" />
+                    <button class="linkbtn" onclick="window.location.href = 'reservations.html';">Make A Reservation</button>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn &amp; Suites - All Rights Reserved</p>
+            <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a></p>
+        </footer>
+        <script src="Scripts/hamburger.js"></script>
+    </body>
+</html>
