@@ -1,11 +1,11 @@
 const weatherURL = "http://api.openweathermap.org/data/2.5/group?id=5605242,5586437,5610810,5600685&appid=df2ef9c7e153fcd045bc56337414f4fa&units=imperial";// Rexburg:5605242, Boise:5586437, Twin Falls:5610810 , Meridian:5600685
-var xhr = new XMLHttpRequest();
-xhr.open("GET", weatherURL);
-xhr.responseType = "json";
-xhr.send();
+var request = new XMLHttpRequest();
+request.open("GET", weatherURL);
+request.responseType = "json";
+request.send();
 
-xhr.onload = function() {
-    var weatherData = xhr.response;
+request.onload = function() {
+    var weatherData = request.response;
     var imageR = document.getElementById("weatherR");
     var descriptionR = document.getElementById("wordR");
     var tempR = document.getElementById("tempR");
