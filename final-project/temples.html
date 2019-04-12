@@ -38,7 +38,19 @@
                     <h2>Locations</h2>
                     <div class="row">
                         <div class="col half card-2">
-                            <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-776440-wallpaper.jpg" alt="Rexburg, Idaho Temple" />
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-776440-wallpaper.jpg" alt="Rexburg, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherR" src="https://openweathermap.org/img/w/01d.png" /><br />
+                                    <span id="wordR"></span><br />
+                                    <span id="tempR"></span>&deg; F
+                                </div>
+                            </div>
+                            <p>
+                                <b>hISTORY</b><br />
+                                Text text text<br />
+                                text text
+                            </p>
                         </div>
                         <div class="col half">
                             <h4 class="txt-banner"><b>Rexburg, Idaho</b></h4>
@@ -63,40 +75,40 @@
                                     Distribution center nearby
                                 </p>
                                 <p class="col half-2">
-                                    <b>hISTORY</b><br />
+                                    <b>oRDINANCE sCHEDULE</b><br />
                                     Text text text<br />
                                     text text
                                 </p>
                             </div>
                             <div class="row">
-                                <p class="col half-2">
-                                    <b>oRDINANCE sCHEDULE</b><br />
-                                    Text text text<br />
-                                    text text
-                                </p>
                                 <p class="col half-2">
                                     <b>sESSION sCHEDULE</b><br />
                                     Text text text<br />
                                     text text
                                 </p>
-                            </div>
-                            <div class="row">
-                                <p class="col half-2">
-                                    <b>Temple Closure Schedule</b><br />
-                                    <i>Closed:</i><br />
-                                    <span id="scheduleR"></span>
-                                </p>
-                                <p class="col half-2">
+                                <p class="col half">
                                     <b>sUMMARY</b><br />
                                     Text text text<br />
                                     text text
                                 </p>
                             </div>
+                            <div class="row">
+                                <b>Temple Closure Schedule</b><br />
+                                <i>Closed:</i><br />
+                                <span id="scheduleR"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col half card-2">
-                            <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x250/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise, Idaho Temple" />
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x250/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherB" src="https://openweathermap.org/img/w/01d.png" /><br />
+                                    <span id="wordB"></span><br />
+                                    <span id="tempB"></span>&deg; F
+                                </div>
+                            </div>
                         </div>
                         <div class="col half">
                             <h4 class="txt-banner"><b>Boise, Idaho</b></h4>
@@ -154,7 +166,14 @@
                     </div>
                     <div class="row">
                         <div class="col half card-2">
-                            <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/twin-falls-idaho/400x250/twin-falls-temple-850955-wallpaper.jpg" alt="Twinn Falls, Idaho Temple" />
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/twin-falls-idaho/400x250/twin-falls-temple-850955-wallpaper.jpg" alt="Twinn Falls, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherTF" src="https://openweathermap.org/img/w/01d.png" /><br />
+                                    <span id="wordTF"></span><br />
+                                    <span id="tempTF"></span>&deg; F
+                                </div>
+                            </div>
                         </div>
                         <div class="col half">
                             <h4 class="txt-banner"><b>Twin Falls, Idaho</b></h4>
@@ -212,7 +231,14 @@
                     </div>
                     <div class="row">
                         <div class="col half card-2">
-                            <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/meridian-idaho/400x250/meridian-idaho-1962615.jpg" alt="Meridian, Idaho Temple" />
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/meridian-idaho/400x250/meridian-idaho-1962615.jpg" alt="Meridian, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherM" src="https://openweathermap.org/img/w/01d.png" /><br />
+                                    <span id="wordM"></span><br />
+                                    <span id="tempM"></span>&deg; F
+                                </div>
+                            </div>
                         </div>
                         <div class="col half">
                             <h4 class="txt-banner"><b>Meridian, Idaho</b></h4>
@@ -277,5 +303,6 @@
         </footer>
         <script src="Scripts/hamburger.js"></script>
         <script src="Scripts/schedules.js"></script>
+        <script src="Scripts/weather.js"></script>
     </body>
 </html>

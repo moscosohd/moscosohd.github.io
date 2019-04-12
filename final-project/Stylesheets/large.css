@@ -146,6 +146,23 @@ h1 {
     background-color: var(--yellow);
     color: white;
 }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-right: -0.70vw;
+    margin-top: -0.12vw;
+    padding: 7px 8px;
+    border: 1px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(0,0,0,0.4);
+}
 /* Centered text */
 .centered {
     width: 95%;
