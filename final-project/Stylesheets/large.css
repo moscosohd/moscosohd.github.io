@@ -236,7 +236,7 @@ h2 {
     width: 44.44%;
 }
 .col.half-2 {
-    width: 41%;
+    width: 40%;
 }
 /* Image in Card */
 .card-img {
@@ -273,8 +273,11 @@ p a.social:link, p a.social:visited, p a.social:hover, p a.social:active {
     padding-right: 2.5vw;
 }
 /* Form */
-form {
+form, .txt-left {
     text-align: left;
+}
+.txt-center {
+    text-align: center;
 }
 fieldset {
     display: flex;
@@ -287,4 +290,8 @@ iframe {
 .txt-banner {
     background-color: var(--yellow);
     padding: 14px 16px;
+}
+.thumbnail {
+    width: 25%;
+    float: right;
 }

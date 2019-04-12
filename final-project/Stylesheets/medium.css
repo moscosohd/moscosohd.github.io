@@ -10,7 +10,7 @@ nav ul li a#icon {
     display: block;
     height: 24px;
 }
-nav .topnav.responsive {
+nav .topnav.responsive, nav .topnav.responsive .dropdown-content {
     position: relative;
 }
 nav .topnav.responsive li a#icon {
@@ -18,21 +18,15 @@ nav .topnav.responsive li a#icon {
     right: 0;
     top: 0;
 }
-nav .topnav.responsive li {
-    float: none;
+nav .topnav.responsive li, nav .topnav.responsive .dropdown .dropbtn {
     display: block !important;
     text-align: left;
 }
-nav .topnav.responsive .dropdown {
+nav .topnav.responsive .dropdown, nav .topnav.responsive li {
     float: none;
 }
-nav .topnav.responsive .dropdown-content {
-    position: relative;
-}
 nav .topnav.responsive .dropdown .dropbtn {
-    display: block;
     width: 100%;
-    text-align: left;
 }
 .main.r-main {
     margin-top: 260px;
