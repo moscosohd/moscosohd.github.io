@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Resources/Images/logo_final.png" />
+        <title>Boise, Idaho | Temples | Temple Inn &amp; Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Stylesheets/normalize.css" />
+        <link rel="stylesheet" href="Stylesheets/large.css" />
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="Stylesheets/medium.css" />
+        <link rel="stylesheet" media="screen and (max-width:600px)" href="Stylesheets/small.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav" id="topnav">
+                    <li><a href="index.html"><img id="small-logo" src="Resources/Images/logo_final.png" alt="Temple Inn and Suites logo" /> Temple Inn &amp; Suites</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'services.html';">Services</button>
+                        <div class="dropdown-content">
+                            <a href="receptions.html">For Receptions</a>
+                            <a href="missionaries.html">For Missionaries</a>
+                        </div>
+                    </div>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a class="active" href="temples.html">Temples</a></li>
+                    <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="hero-container">
+                <div class="centered"><h1>Idaho Temples</h1></div>
+            </div>
+            <article>
+                <section id="first">
+                    <div class="row">
+                        <div class="col half card-2">
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x250/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherB" src="https://openweathermap.org/img/w/01d.png" alt="Weather in Boise" /><br />
+                                    <span id="wordB"></span><br />
+                                    <span id="tempB"></span>&deg; F
+                                </div>
+                            </div>
+                            <p>
+                                <b>History</b><br />
+                                The Boise Idaho Temple is the 29th constructed and 27th operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church). The temple is located in the city of Boise, Idaho. The Boise Idaho Temple was dedicated May 25, 1984 by Gordon B. Hinckley.
+                            </p>
+                        </div>
+                        <div class="col half">
+                            <h4 class="txt-banner"><strong>Boise, Idaho</strong></h4>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Address</b><br />
+                                    1211 S Cole Rd<br />
+                                    Boise ID 83709-1871<br />
+                                    United States
+                                </p>
+                                <p class="col half-2">
+                                    <b>Telephone</b><br />
+                                    (1) 208-322-4422
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Services</b><br />
+                                    No clothing rental available<br />
+                                    No cafeteria available<br />
+                                    No patron housing available<br />
+                                    Distribution center nearby
+                                </p>
+                                <p class="col half-2">
+                                    <b>Ordinance Schedule</b><br />
+                                    4:00 PM - 8:00 PM ~ Church Groups - Appointments Only
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Session Schedule</b><br />
+                                    5:15 PM ~ Walk-ins and Appointments<br />
+                                    6:00 PM ~ Walk-ins Only<br />
+                                    6:45 PM ~ Walk-ins Only<br />
+                                    7:30 PM ~ Walk-ins and Appointments
+                                </p>
+                                <p class="col half-2">
+                                    <b>Summary</b><br />
+                                    The Boise Idaho Temple has a total of 35,325 square feet (3,281.8 m2), four ordinance rooms, and four sealing rooms. It was built with a sloping roof & six-spire design.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <b>Temple Closure Schedule</b><br />
+                                <i>Closed:</i><br />
+                                <span id="scheduleB"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn &amp; Suites - All Rights Reserved</p>
+            <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a> | <a href="reference.html">Reference</a></p>
+        </footer>
+        <script src="Scripts/hamburger.js"></script>
+        <script src="Scripts/schedules.js"></script>
+        <script src="Scripts/weather.js"></script>
+    </body>
+</html>

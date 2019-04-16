@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" href="Resources/Images/logo_final.png" />
-        <title>Temples | Temple Inn &amp; Suites</title>
+        <title>Rexburg, Idaho | Temples | Temple Inn &amp; Suites</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Stylesheets/normalize.css" />
         <link rel="stylesheet" href="Stylesheets/large.css" />
@@ -24,18 +24,17 @@
                         </div>
                     </div>
                     <li><a href="reservations.html">Reservations</a></li>
-                    <li><a class="active" href="javascript:void(0)">Temples</a></li>
+                    <li><a class="active" href="temples.html">Temples</a></li>
                     <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main" id="main">
             <div class="hero-container">
-                <div class="centered"><h1>Temples</h1></div>
+                <div class="centered"><h1>Idaho Temples</h1></div>
             </div>
             <article>
                 <section id="first">
-                    <h2>Locations</h2>
                     <div class="row">
                         <div class="col half card-2">
                             <div class="container">
@@ -46,42 +45,56 @@
                                     <span id="tempR"></span>&deg; F
                                 </div>
                             </div>
-                            <button class="linkbtn" onclick="window.location.href = 'rexburg.html';">Rexburg, Idaho</button>
+                            <p>
+                                <b>History</b><br />
+                                The Rexburg Idaho Temple is the 125th operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church). Announced in late 2003, the temple was dedicated on February 10, 2008 and was the first temple dedicated by Thomas S. Monson as the church's new president.
+                            </p>
                         </div>
-                        <div class="col half card-2">
-                            <div class="container">
-                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/400x250/1-Boise-Idaho-Temple-1968984.jpg" alt="Boise, Idaho Temple" />
-                                <div class="top-right">
-                                    <img id="weatherB" src="https://openweathermap.org/img/w/01d.png" alt="Weather in Boise" /><br />
-                                    <span id="wordB"></span><br />
-                                    <span id="tempB"></span>&deg; F
-                                </div>
+                        <div class="col half">
+                            <h4 class="txt-banner"><b>Rexburg, Idaho</b></h4>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Address</b><br />
+                                    750 S 2nd E<br />
+                                    Rexburg ID 83440-5404<br />
+                                    United States
+                                </p>
+                                <p class="col half-2">
+                                    <b>Telephone</b><br />
+                                    (1) 208-656-0880
+                                </p>
                             </div>
-                            <button class="linkbtn" onclick="window.location.href = 'boise.html';">Boise, Idaho</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col half card-2">
-                            <div class="container">
-                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/twin-falls-idaho/400x250/twin-falls-temple-850955-wallpaper.jpg" alt="Twin Falls, Idaho Temple" />
-                                <div class="top-right">
-                                    <img id="weatherTF" src="https://openweathermap.org/img/w/01d.png" alt="Weather in Twin Falls" /><br />
-                                    <span id="wordTF"></span><br />
-                                    <span id="tempTF"></span>&deg; F
-                                </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Services</b><br />
+                                    Clothing rental available<br />
+                                    No cafeteria available<br />
+                                    No patron housing available<br />
+                                    Distribution center nearby
+                                </p>
+                                <p class="col half-2">
+                                    <b>Ordinance Schedule</b><br />
+                                    4:00 PM - 8:00 PM ~ Church Groups - Appointments Only
+                                </p>
                             </div>
-                            <button class="linkbtn" onclick="window.location.href = 'twinFalls.html';">Twin Falls, Idaho</button>
-                        </div>
-                        <div class="col half card-2">
-                            <div class="container">
-                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/meridian-idaho/400x250/meridian-idaho-1962615.jpg" alt="Meridian, Idaho Temple" />
-                                <div class="top-right">
-                                    <img id="weatherM" src="https://openweathermap.org/img/w/01d.png" alt="Weather in Rexburg" /><br />
-                                    <span id="wordM"></span><br />
-                                    <span id="tempM"></span>&deg; F
-                                </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Session Schedule</b><br />
+                                    5:15 PM ~ Walk-ins and Appointments<br />
+                                    6:00 PM ~ Walk-ins Only<br />
+                                    6:45 PM ~ Walk-ins Only<br />
+                                    7:30 PM ~ Walk-ins and Appointments
+                                </p>
+                                <p class="col half-2">
+                                    <b>Summary</b><br />
+                                    The temple rests atop a hill, as does much of the city with a shield volcano nearby.
+                                </p>
                             </div>
-                            <button class="linkbtn" onclick="window.location.href = 'meridian.html';">Meridian, Idaho</button>
+                            <div class="row">
+                                <b>Temple Closure Schedule</b><br />
+                                <i>Closed:</i><br />
+                                <span id="scheduleR"></span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -92,6 +105,7 @@
             <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a> | <a href="reference.html">Reference</a></p>
         </footer>
         <script src="Scripts/hamburger.js"></script>
+        <script src="Scripts/schedules.js"></script>
         <script src="Scripts/weather.js"></script>
     </body>
 </html>

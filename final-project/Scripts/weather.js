@@ -3,7 +3,7 @@ var request = new XMLHttpRequest();
 request.open("GET", weatherURL);
 request.send();
 
-request.onload = function() {
+request.onload = function () {
     var weatherData = JSON.parse(request.responseText);
     var imageR = document.getElementById("weatherR");
     var descriptionR = document.getElementById("wordR");
@@ -19,30 +19,50 @@ request.onload = function() {
     var tempM = document.getElementById("tempM");
 
     for (var temple = 0; temple < weatherData.cnt; temple++) {
-        switch(temple) {
-            case 0: 
-            imageR.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["0"].weather["0"].icon + ".png");
-            descriptionR.innerHTML = weatherData.list["0"].weather["0"].description.toUpperCase();
-            tempR.innerHTML = Math.round(weatherData.list["0"].main.temp);
-            break;
+        switch (temple) {
+            case 0:
+                try {
+                    imageR.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["0"].weather["0"].icon + ".png");
+                    descriptionR.innerHTML = weatherData.list["0"].weather["0"].description.toUpperCase();
+                    tempR.innerHTML = Math.round(weatherData.list["0"].main.temp);
+                }
+                catch {
+                    continue;
+                }
+                break;
 
-            case 1: 
-            imageB.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["1"].weather["0"].icon + ".png");
-            descriptionB.innerHTML = weatherData.list["1"].weather["0"].description.toUpperCase();
-            tempB.innerHTML = Math.round(weatherData.list["1"].main.temp);
-            break;
+            case 1:
+                try {
+                    imageB.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["1"].weather["0"].icon + ".png");
+                    descriptionB.innerHTML = weatherData.list["1"].weather["0"].description.toUpperCase();
+                    tempB.innerHTML = Math.round(weatherData.list["1"].main.temp);
+                }
+                catch {
+                    continue;
+                }
+                break;
 
-            case 2: 
-            imageTF.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["2"].weather["0"].icon + ".png");
-            descriptionTF.innerHTML = weatherData.list["2"].weather["0"].description.toUpperCase();
-            tempTF.innerHTML = Math.round(weatherData.list["2"].main.temp);
-            break;
+            case 2:
+                try {
+                    imageTF.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["2"].weather["0"].icon + ".png");
+                    descriptionTF.innerHTML = weatherData.list["2"].weather["0"].description.toUpperCase();
+                    tempTF.innerHTML = Math.round(weatherData.list["2"].main.temp);
+                }
+                catch {
+                    continue;
+                }
+                break;
 
-            case 3: 
-            imageM.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["3"].weather["0"].icon + ".png");
-            descriptionM.innerHTML = weatherData.list["3"].weather["0"].description.toUpperCase();
-            tempM.innerHTML = Math.round(weatherData.list["3"].main.temp);
-            break;
+            case 3:
+                try {
+                    imageM.setAttribute("src", "https://openweathermap.org/img/w/" + weatherData.list["3"].weather["0"].icon + ".png");
+                    descriptionM.innerHTML = weatherData.list["3"].weather["0"].description.toUpperCase();
+                    tempM.innerHTML = Math.round(weatherData.list["3"].main.temp);
+                }
+                catch {
+                    continue;
+                }
+                break;
         }
     }
 }

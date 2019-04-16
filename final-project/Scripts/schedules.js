@@ -1,11 +1,10 @@
 const scheduleURL = "https://moscosohd.github.io/final-project/Scripts/schedules.json";
 var xhr = new XMLHttpRequest();
 xhr.open("GET", scheduleURL);
-xhr.responseType = "json";
 xhr.send();
 
-xhr.onload = function() {
-    var scheduleData = xhr.response;
+xhr.onload = function () {
+    var scheduleData = JSON.parse(xhr.response);
     var locationR = document.getElementById("scheduleR");
     var locationB = document.getElementById("scheduleB");
     var locationTF = document.getElementById("scheduleTF");
@@ -13,11 +12,42 @@ xhr.onload = function() {
 
     for (var temple in scheduleData) {
         for (var i = 0; i < scheduleData[temple].length; i++) {
-            switch(temple) {
-                case "rexburg":locationR.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
-                case "boise":locationB.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
-                case "twin falls":locationTF.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
-                case "meridian":locationM.innerHTML += scheduleData[temple][i] + ";<br />\n"; break;
+            switch (temple) {
+                case "rexburg":
+                    try {
+                        locationR.innerHTML += scheduleData[temple][i] + ";<br />\n";
+                    }
+                    catch {
+                        continue;
+                    }
+                    break;
+
+                case "boise":
+                    try {
+                        locationB.innerHTML += scheduleData[temple][i] + ";<br />\n";
+                    }
+                    catch {
+                        continue;
+                    }
+                    break;
+
+                case "twin falls":
+                    try {
+                        locationTF.innerHTML += scheduleData[temple][i] + ";<br />\n";
+                    }
+                    catch {
+                        continue;
+                    }
+                    break;
+
+                case "meridian":
+                    try {
+                        locationM.innerHTML += scheduleData[temple][i] + ";<br />\n";
+                    }
+                    catch {
+                        continue;
+                    }
+                    break;
             }
         }
     }

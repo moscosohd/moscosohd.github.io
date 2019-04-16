@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="Resources/Images/logo_final.png" />
+        <title>Meridian, Idaho | Temples | Temple Inn &amp; Suites</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Stylesheets/normalize.css" />
+        <link rel="stylesheet" href="Stylesheets/large.css" />
+        <link rel="stylesheet" media="screen and (max-width:768px)" href="Stylesheets/medium.css" />
+        <link rel="stylesheet" media="screen and (max-width:600px)" href="Stylesheets/small.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav" id="topnav">
+                    <li><a href="index.html"><img id="small-logo" src="Resources/Images/logo_final.png" alt="Temple Inn and Suites logo" /> Temple Inn &amp; Suites</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'services.html';">Services</button>
+                        <div class="dropdown-content">
+                            <a href="receptions.html">For Receptions</a>
+                            <a href="missionaries.html">For Missionaries</a>
+                        </div>
+                    </div>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a class="active" href="temples.html">Temples</a></li>
+                    <li><a href="javascript:void(0)" id="icon" onclick="hamburger()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="hero-container">
+                <div class="centered"><h1>Idaho Temples</h1></div>
+            </div>
+            <article>
+                <section id="first">
+                    <div class="row">
+                        <div class="col half card-2">
+                            <div class="container">
+                                <img class="card-img-2" src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/meridian-idaho/400x250/meridian-idaho-1962615.jpg" alt="Meridian, Idaho Temple" />
+                                <div class="top-right">
+                                    <img id="weatherM" src="https://openweathermap.org/img/w/01d.png" alt="Weather in Rexburg" /><br />
+                                    <span id="wordM"></span><br />
+                                    <span id="tempM"></span>&deg; F
+                                </div>
+                            </div>
+                            <p>
+                                <b>History</b><br />
+                                The Meridian Idaho Temple is a temple of The Church of Jesus Christ of Latter-day Saints (LDS Church) in Meridian, Idaho. The intent to build the temple was announced by church president Thomas S. Monson on April 4, 2011, during the church's semi-annual general conference. The temple was dedicated on November 19, 2017 by Dieter F. Uchtdorf.
+                            </p>
+                        </div>
+                        <div class="col half">
+                            <h4 class="txt-banner"><strong>Meridian, Idaho</strong></h4>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Address</b><br />
+                                    7355 N Linder Rd<br />
+                                    Meridian ID 83646<br />
+                                    United States
+                                </p>
+                                <p class="col half-2">
+                                    <b>Telephone</b><br />
+                                    (1) 208-957-7300
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Services</b><br />
+                                    No clothing rental available<br />
+                                    No cafeteria available<br />
+                                    No patron housing available<br />
+                                    No distribution center nearby
+                                </p>
+                                <p class="col half-2">
+                                    <b>Ordinance Schedule</b><br />
+                                    5:15 AM - 5:00 PM ~ Walk-ins Only - English
+                                    5:00 PM - 9:00 PM ~ Family Priority Time - Walk-ins Only - English
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p class="col half-2">
+                                    <b>Session Schedule</b><br />
+                                    5:15 AM ~ Walk-ins and Appointments
+                                    6:00 AM ~ Walk-ins and Appointments
+                                    6:45 AM ~ Walk-ins and Appointments
+                                    7:30 AM ~ Walk-ins and Appointments
+
+                                </p>
+                                <p class="col half-2">
+                                    <b>Summary</b><br />
+                                    The temple's design includes the syringa (Idaho' state flower) and golds, blues and greens in the wool rugs and stained glass, reflecting Idaho harvest and nature.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <b>Temple Closure Schedule</b><br />
+                                <i>Closed:</i><br />
+                                <span id="scheduleM"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2019 Temple Inn &amp; Suites - All Rights Reserved</p>
+            <p><a href="temples.html">Temples</a> | <a href="reservations.html">Reservations</a> | <a href="services.html">Services</a> | <a href="contactUs.html">Contact Us</a> | <a href="reference.html">Reference</a></p>
+        </footer>
+        <script src="Scripts/hamburger.js"></script>
+        <script src="Scripts/schedules.js"></script>
+        <script src="Scripts/weather.js"></script>
+    </body>
+</html>
