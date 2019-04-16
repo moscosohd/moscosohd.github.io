@@ -5,7 +5,7 @@ request.responseType = "json";
 request.send();
 
 request.onload = function() {
-    var weatherData = request.response;
+    var weatherData = JSON.parse(request.responseText);
     var imageR = document.getElementById("weatherR");
     var descriptionR = document.getElementById("wordR");
     var tempR = document.getElementById("tempR");
